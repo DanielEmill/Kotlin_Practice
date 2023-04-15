@@ -19,6 +19,8 @@ fun main()
     ejercicio7()
     println("============================")
     ejercicio8()
+    println("============================")
+    ejercicio9()
 }
 fun ejercicio2()
 {
@@ -78,4 +80,15 @@ fun ejercicio8() {
 fun displayAlertMessage(system: String, email: String): String
 {
     return "There's a new sign-in request on ${system} for your Google Account ${email}"
+}
+fun ejercicio9() {
+    val pasos = 4000
+    val caloriesBurned = PEDOMETERstepsTOcalories(pasos);
+    println("Walking $pasos steps burns $caloriesBurned calories")
+}
+
+fun PEDOMETERstepsTOcalories(pasoss: Int): Double {
+    val CaloriesBURNEDforEachStep = 0.04
+    val TotalCALORIESburned = pasoss * CaloriesBURNEDforEachStep
+    return TotalCALORIESburned
 }
