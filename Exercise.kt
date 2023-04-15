@@ -1,28 +1,47 @@
 //Ejercicio 1 Println y print
 fun main()
 {
+    printear()
+    println("============================")
+    usoVariable()
+    println("============================")
+    usoVariableDouble()
+    println("============================")
+    omitirTipo()
+    println("============================")
+    varVariable()
+}
+fun printear()
+{
     println("Tuesday")
     println("Thursday")
     println("Wednesday")
     println("Friday")
     println("Monday")
-    println("============================")
     print("Hola Esto es una prueba ")
     print("Sin Salto de linea")
+    println(" ")
+
 }
 //Ejercicio 2 Variables y concatenar
-fun main() {
+fun usoVariable() {
     val numero: Int = 2
     val numero2: Int = 4
     println("la suma de $numero y $numero2 es ${numero+numero2}")
 }
-fun main() {
+fun usoVariableDouble() {
     val numero: Double = 2.4
     val numero2: Double = 4.6
     println("la multiplicacion de $numero y $numero2 es ${numero*numero2}")
 }
 // Omitiendo el tipo de la variable.
-fun main() {
+fun omitirTipo() {
 	val count = 2
+    println(count)
+}
+//Ejercicio 3 Variables con var, la cual se puede cambiar el valor durante el programa, con el val solo podemos leerlo.
+fun varVariable() {
+	var count = 2
+    count = 20
     println(count)
 }
