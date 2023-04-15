@@ -10,8 +10,14 @@ fun main()
     omitirTipo()
     println("============================")
     varVariable()
+    println("============================")
+    var saludoFun = Saludo()
+    println(saludoFun)
+    println("============================")
+    println(Saludo2("15", 5))
 }
-fun printear()
+
+fun printear():Unit
 {
     println("Tuesday")
     println("Thursday")
@@ -44,4 +50,15 @@ fun varVariable() {
 	var count = 2
     count = 20
     println(count)
+}
+//Retornar Valor string
+fun Saludo(): String {
+    val saludo = "Buenos Dias"
+    val nombre = "Daniel :)"
+    return "$saludo\n$nombre"
+}
+fun Saludo2(edad: String, numfav: Int): String {
+    val saludo = "Buenos Dias"
+    val nombre = "Daniel :)"
+    return "$saludo\n$nombre y su edad es $edad y su numero favorito es $numfav"
 }
